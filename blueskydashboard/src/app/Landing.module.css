@@ -1,0 +1,71 @@
+/* app/Landing.module.css */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1530908295418-a12e326966ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .overlay {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+  
+  .title {
+    color: #ffffff;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .subtitle {
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .ctaButton {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+      background-color: #ffffff;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  .fadeIn {
+      animation: fadeInAnimation ease-in-out .5s forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+      from { opacity: .5; }
+      to { opacity:1; }
+  }
+  
+  @media (max-width:768px) {
+      .title { font-size:3rem; }
+      .subtitle { font-size:1.2rem; }
+      .ctaButton { padding:12px 24px; font-size: 1rem; }
+  }
